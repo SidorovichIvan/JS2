@@ -1,0 +1,69 @@
+body {
+    margin: 0 auto;
+    width: 1240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    margin-top: 20px;
+    width: 150px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+img {
+    width: 80px;
+    height: 75px;
+}
+
+.forBurger {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.forTopping {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+#mainDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+#divForToping {
+    width: 100%;
+    display: none;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+#Additionally {
+    width: 100%;
+    display: none;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+#cart {
+    width: 100%;
+}
