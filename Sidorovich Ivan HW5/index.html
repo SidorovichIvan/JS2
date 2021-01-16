@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mainDiv" id="app">
+        <div>
+            <input type="text" v-model="searchLine" />
+            <span @click="filteredGoods">Искать</span>
+
+            <div class="goods">
+                <p v-if="filteredGoodsARR==0">Товар не найден</p>
+                <div class="goods-list" v-for="({product_name, price}, id) in filteredGoodsARR">
+                    <h3>{{product_name}}</h3>
+                    <p>{{price}}</p>
+                    <button @click="() => addCart(id)">Добавить</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart">
+            <h2>Корзина</h2>
+            <p v-if="cart.length ==0">Корзина пуста</p>
+            <div v-for="({product_name, price}, id) in cart">
+                <hr>
+                <h3>{{product_name}}</h3>
+                <p>{{price}}</p>
+                <button type="button" @click="() => deleteCart(id)">Убрать из корзины</button>
+                <hr>
+            </div>
+            <p v-if="cart.length !=0">В корзине {{cartGoods}} товаров на сумму {{sumCart}} </p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
