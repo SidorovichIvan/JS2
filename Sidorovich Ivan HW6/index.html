@@ -14,11 +14,11 @@
 
             <search v-bind:goods="goods"></search>
             <catalog>
-                <catalog-item></catalog-item>
+                <catalog-item v-bind:cart="cart"></catalog-item>
             </catalog>
 
         </div>
-        <cart v-bind:cart="cart"></cart>
+        <cart></cart>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="main.js"></script>
