@@ -11,17 +11,14 @@
 <body>
     <div class="mainDiv" id="app">
         <div>
-
-            <search v-bind:goods="goods"></search>
-            <catalog>
-                <catalog-item></catalog-item>
+            <search v-on:search="filteredGoodsMain"></search>
+            <catalog :filter="searchLine" :cart="cart" >
+               
             </catalog>
-
         </div>
-        <cart v-bind:cart="cart"></cart>
+        <cart :cart="cart"></cart>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="main.js"></script>
 </body>
-
-</html>
+</html> 
