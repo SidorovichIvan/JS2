@@ -71,7 +71,7 @@ class cart {
         $containerProduct.append($leftContent);
 
         let $img = document.createElement('img');
-        $img.src = "img/Layer_43.jpg";
+        $img.src = `${ob.img_URl}`;
         $leftContent.append($img);
 
         let $textContent = document.createElement('div');

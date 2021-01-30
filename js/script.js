@@ -82,7 +82,7 @@ class GoodsList {
 
         const $window_img = document.createElement('img');
         $window_img.classList.add("window-img")
-        $window_img.src = "img/Layer_2.jpg"
+        $window_img.src = `${ob.img_URl}`
         $window_photo.append($window_img);
 
 
